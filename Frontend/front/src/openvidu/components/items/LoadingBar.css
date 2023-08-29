@@ -1,0 +1,55 @@
+.bar {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  margin: 10px;
+  transform: translate(-50%, -50%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: '50%';
+}
+.description {
+  position: relative;
+  font-size: 10px;
+  color: rgb(52, 51, 48);
+  bottom: 5px;
+  left: 20px;
+  background-color: bisque;
+  border-radius: 7px;
+  padding: 1px 5px;
+}
+.progress {
+  position: relative;
+  height: 6px;
+  width: 810%;
+  border: 6px solid #f4a261;
+  border-radius: 15px;
+}
+.progress .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 6px;
+  border-radius: 15px;
+  animation: progres 3.3s infinite linear;
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 80%;
+  }
+  75% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+} ;

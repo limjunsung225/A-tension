@@ -1,0 +1,120 @@
+.quizFormContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+.quizForm2Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+
+}
+
+.form-style-7 {
+  width: 80%;
+  background: #ECF3FC;
+  border-radius: 2px;
+  padding: 40px;
+
+}
+
+.form-style-7 h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: black;
+  font-size: x-large;
+
+}
+.form-style-7 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.form-style-7 li {
+  display: block;
+  padding: 2px, 5px, 30px, 5px;
+  border: 1px solid #ECF3FC;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.form-style-7 li:last-child {
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.form-style-7 li > label {
+  display: block;
+  float: left;
+  margin-top: -19px;
+  background: #ffffff;
+  height: 14px;
+  padding: 2px 5px 20px 5px;
+  color: #176dee;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: bold;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 35px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.form-style-7 li > span {
+  display: block;
+  padding: 3px;
+  margin: -9 -9px -9px -9px;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 0px 0px 10px 10px;
+  background: #da91e1;
+}
+.form-style-7 textarea {
+  resize: none;
+}
+.form-style-7 button[type="submit"],
+.form-style-7 button[type="button"] {
+  background: #176dee;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  color: #d2e2ff;
+}
+.form-style-7 button[type="submit"]:hover,
+.form-style-7 button[type="button"]:hover {
+  background: #176DEE;
+  color: #fff;
+  cursor: pointer;
+}

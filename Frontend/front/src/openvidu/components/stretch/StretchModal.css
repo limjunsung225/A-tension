@@ -1,0 +1,111 @@
+.stretchModal {
+  position: absolute;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0.5px;
+}
+
+.quizModal > .quizSection {
+  position: relative;
+  height: max-content;
+  border-radius: 20px;
+  min-width: 800px;
+  min-height: min-content;
+  max-height: 95%;
+  background-color: #fff;
+  animation: modal-show 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+}
+.quizModal > .quizSection > header {
+  position: relative;
+  padding: 16px 64px 16px 16px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  width: 100%;
+  width: -webkit-fill-available;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+.quizModal > .quizSection > header button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #999;
+  background-color: transparent;
+}
+.quizModal > .quizSection > .quizMain {
+  min-width: inherit;
+  overflow-y: scroll;
+}
+.quiz.quizSection {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.quizModal > .quizSection > footer {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: right;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  z-index: 1;
+}
+.quizModal > .quizSection > footer button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #6c757d;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.quizModal.openQuizModal {
+  display: flex;
+  align-items: center;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,73 @@
+// .dot{
+
+//     border-radius: 20px;
+//     padding: 23px 26px 23px 26px;
+//     display: flex;
+//     align-items: flex-start;
+   
+//   }
+  .iconBlock {
+    margin-right: 10px;
+    height: 100%;
+    align-self: stretch;
+  }
+  // .klabel {
+
+  //   font-family: "pretendard";
+  //   font-size: 13px;
+  //   font-weight: 400;
+  //   line-height: 26px;
+  //   color: rgba(26,26,26,1);
+  //   margin-top: 3px;
+  //   margin-right: 8px;
+  // }
+//   .elabel {
+
+//     height: 62.5%;
+//     font-family: "SUIT";
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 20px;
+//     color: rgba(26,26,26,1);
+//     margin-top: 9px;
+//   }
+//   .sidebarButtonIcon {
+//     width: 21.33px;
+//     height: 20.67px;
+//   }
+
+.dot {
+  border-radius: 13px;
+  padding: 8px 10px 6px 10px;
+  // height: 53px;
+  // width: 187px;
+  display: flex;
+  align-items: flex-start;
+  // border: 1px solid ;
+}
+// .elabel {
+//   width: 21.34%;
+//   height: 100%;
+//   margin-right: 14.03px;
+// }
+.klabel {
+  // width: 50%;
+  padding: 0px;
+  font-family: "font-SUIT";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  color: grey2;
+  margin-top: 2px;
+  margin-right: 3.72px;
+}
+.elabel {
+  // width: 35.96%;
+  height: 60.83%;
+  font-family: "pretendard";
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 13px;
+  color: grey2;
+  margin-top: 6.01px;
+}

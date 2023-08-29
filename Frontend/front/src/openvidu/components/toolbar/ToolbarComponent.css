@@ -1,0 +1,174 @@
+#header {
+  color: #ffffff;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff,
+    #0071f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #0794ff,
+    #ffffff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  min-width: 400px !important;
+}
+#teacher-header > div > div > div > div > div > div{
+  background-color: #eeeeee;
+}
+
+#teacher-header {
+  color: #ffffff;
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #9e9c9c,
+    #0066ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #ffffff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 0 14px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  min-width: 400px !important;
+}
+
+.toolbar {
+  padding: 0 !important;
+}
+
+.headerLight {
+  color: #706969 !important;
+  background-color: #eeeeee !important;
+}
+
+#navSessionInfo {
+  width: 100px;
+}
+
+#navButtons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-width: 400px;
+}
+
+.buttonStyle {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttonStyle p {
+  font-size: 12px;
+  white-space: nowrap;
+  margin: 8px 0 0 0;
+  color: #000000;
+}
+
+#titleContent {
+  position: absolute;
+  max-width: 200px;
+  margin: 1rem;
+  background-color: #494949b0;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: right;
+}
+
+.titleContentLight {
+  background-color: #dfdfdf !important;
+  color: #000;
+}
+
+#header_img {
+  max-width: 135px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#session-title {
+  font-family: "Open Sans", sans-serif;
+}
+
+#navEmoji {
+  position: absolute;
+  right: 9.5rem;
+}
+
+#navCon{
+  position:absolute;
+  right: 14.5rem;
+}
+
+#navQuestButton {
+  position: absolute;
+  right: 4.5rem;
+}
+
+#questPoint {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: #a64dff;
+  border: 1px solid #000;
+  z-index: 99999;
+}
+
+#navChatButton {
+  position: absolute;
+}
+
+#point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #ffa600;
+  border: 1px solid #000;
+  z-index: 99999;
+}
+.pointLight {
+  border: 1px solid #ffffff !important;
+}
+
+.teacher-toolbar {
+  position: absolute;
+  top: -80px;
+}
+
+@media only screen and (max-width: 700px) {
+  #titleContent,
+  #navChatButton,
+  #navQuestButton {
+    display: none;
+  }
+}
+
+@keyframes cooldown {
+  0% {
+    color: Red;
+  }
+  100% {
+    color: white;
+  }
+}

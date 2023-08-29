@@ -1,0 +1,39 @@
+.opaqueToolbar {
+    width: 410.1px;
+    height: 50.27px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 66px;
+    backdrop-filter: blur(13.23px);
+  }
+
+  .media-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .media-container video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    // top: ;
+    // left: 50;
+    width: 410.1px;
+    height: 50.27px;
+    background-color:  rgba(255, 255, 255, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  // .media-container:hover .overlay {
+  //   opacity: 1; /* Show overlay on hover */
+  // }
+  

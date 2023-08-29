@@ -1,0 +1,78 @@
+.outListContainer {
+  width: 80%;
+  height: 120px;
+  max-width: 700px;
+  min-height: 140px;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.outSideContainer {
+  width: 100%;
+  min-height: 45px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.quizListContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.listItems {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quizListContainer h1,
+.quizListContainer p {
+  margin: 4px;
+}
+
+.listItems p {
+  margin: 4px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quizListContainer button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  min-height: 45px;
+  line-height: 45px;
+  border-radius: 7px;
+  background-color: #176DEE;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.quizListContainer button :hover {
+  background: rgb(23, 109, 238);
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}

@@ -1,0 +1,334 @@
+#chatContainer {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ECF3FC
+  );
+}
+
+#chatToolbar {
+  position: relative;
+  height: 30px;
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ECF3FC
+  );/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+          to left,
+          #D4E5FA,
+          #D4E5FA
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #000000;
+}
+
+#closeButton {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#closeButton:hover {
+  cursor: pointer;
+}
+
+.message-divider {
+  border-top: 2px solid #ffffff; /* 흰색 얇은 실선 스타일 설정 */
+  margin: 10px 0; /* 적절한 간격 설정 */
+}
+
+#chatComponent {
+  background-color: #D4E5FA;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  border-radius: 20px;
+}
+
+.message-wrap {
+  padding: 0 15px;
+  height: calc(96% - 135px);
+  overflow: auto;
+}
+
+.message {
+  position: relative;
+  padding: 7px 0;
+}
+.user-img {
+  position: absolute;
+  border-radius: 45px;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+}
+
+.level-png {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.msg-detail {
+  width: calc(100% - 65px);
+  display: inline-block;
+}
+
+.msg-detail p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.msg-info .msg-nickname {
+  font-size: 0.8em;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.msg-time {
+  font-size: 0.8em;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.msg-content-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.message.right .msg-content-wrap {
+  flex-direction: row-reverse;
+}
+
+.msg-content {
+  position: relative;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 8px;
+  color: #000000;
+  width: auto;
+  max-width: 80%;
+}
+
+.msg-picture {
+  width: 60px;
+  height: 60px;
+}
+
+span.triangle {
+  border-radius: 2px;
+  height: 8px;
+  width: 8px;
+  top: 12px;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.text {
+  word-break: break-all;
+  color: #000000;
+}
+
+/* Start message from other user */
+
+.message > .left .msg-detail .msg-info {
+  text-align: left;
+}
+
+.message.left .msg-detail {
+  padding-left: 65px;
+}
+
+.message.left .user-img {
+  left: -5px;
+  border: 1px solid #FFFFFF;
+}
+
+.message.left .msg-detail .msg-content {
+  background-color: #FFFFFF;
+  float: left;
+}
+
+.message.left .msg-detail .msg-content.system {
+  background-color: #94e0e7;
+  float: left;
+}
+
+.message.left .msg-detail .msg-content.system span.triangle {
+  background-color: #94e0e7;
+  float: left;
+}
+
+.message.left .msg-detail .msg-content span.triangle {
+  background-color: #FFFFFF;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  left: -5px;
+}
+
+.message.left .msg-time {
+  float: left;
+}
+
+/* End message from other user */
+
+/* Start my messages */
+
+.message.right .msg-detail .msg-info {
+  text-align: right;
+}
+.message.right .user-img {
+  right: -5px;
+  border: 1px solid #FFFFFF;
+}
+
+.message.right .msg-detail .msg-content {
+  background-color: #FFFFFF;
+  float: right;
+}
+.message.right .msg-detail .msg-content span.triangle {
+  background-color: #FFFFFF;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  right: -5px;
+}
+
+.message.right .msg-time {
+  float: right;
+}
+
+/* whisper - 귓속말 css*/
+
+.message.whisper .msg-detail .msg-content {
+  background-color: #f6ff7e;
+}
+
+.message.whisper .msg-detail .msg-content span.triangle {
+  background-color: #f6ff7e;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  right: -5px;
+}
+
+/* End my messages */
+
+/* 귓속말 상대 선택 */
+#whisper select {
+  position: absolute;
+  bottom: calc(1rem + 90px);
+  left: 3%;
+  height: 28px;
+  width: 94%;
+  background-color: white;
+  font-family: 'NanumSquare';
+  border-radius: 6px;
+  padding: 0px 10px;
+  font-weight: 300;
+  color: var(--text-dark);
+}
+
+#whisper option {
+  height: 0.5rem;
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  color: var(--text-dark);
+}
+
+#messageInput {
+  position: absolute;
+  left: 3%;
+  bottom: 1rem;
+  width: 94%;
+  height: 60px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 1rem;
+}
+
+#messageInput textarea {
+  background-color: #2a364b00;
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-left: -6%;
+  color: #000000;
+  resize: none;
+}
+
+#messageInput textarea::placeholder {
+  color: #000000;
+}
+
+#sendButton {
+  position: absolute;
+  width: 2rem;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: none !important;
+}
+
+#sendButton:hover {
+  cursor: pointer;
+  width: 2.1rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+}
+
+.chatComponentLight ::-webkit-scrollbar-thumb {
+  background-color: #eeeeee !important;
+}
+
+.my-nickname {
+  color: red;
+  font-weight: bold;
+}
+
+.other-nickname {
+  color: blue;
+  font-weight: bold;
+}
+
+.my-message {
+  background-color: #d0eaff;
+  float: right;
+}
+
+.other-message {
+  background-color: #f0f0f0;
+  float: left;
+}

@@ -1,0 +1,73 @@
+.concentration-toolbar {
+  /* position: absolute; */
+  z-index: 99998;
+  /* z-index: 9999; */
+  /* background-color: rgb(62 76 118); */
+  width: 456px;
+  position: absolute;
+  /* top: 120px; */
+  /* right: 544px; */
+  border-radius: 16px;
+  padding: 15px;
+}
+.reaction-wrapper {
+  /* 주석 처리 한 이유: 회의창 크기보다 크게 잡혀서
+  width: 100vw!important;
+  height: 100vh!important; */
+  overflow: hidden;
+}
+
+.reaction-modal {
+}
+.reaction-modal.openModal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+.toolbar-pill-list {
+  display: flex;
+  width: 480px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px !important;
+  justify-content: space-evenly;
+  /* flex-shrink: 1; */
+}
+
+.pills {
+  display: flex;
+  padding: 7px 12px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 100px;
+  background: var(--color-p-0, #fff);
+}
+
+.pill-text {
+  color: var(--color-g-0, #1a1a1a);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* width: auto!important; */
+}
+
+.icon-block {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popover-info {
+  z-index: 99999 !important;
+  width: 400px !important;
+  max-height: 300px;
+  max-width: 335px !important;
+}

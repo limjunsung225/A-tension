@@ -1,0 +1,51 @@
+.reaction-wrapper {
+  /* 주석 처리 한 이유: 회의창 크기보다 크게 잡혀서
+  width: 100vw!important; 
+  height: 100vh!important; */
+  overflow: hidden;
+}
+
+.reaction-modal {
+  z-index: 9999;
+  background-color: rgb(62 76 118);
+  position: absolute;
+  bottom: 80px;
+  right: 120px;
+  border-radius: 16px;
+  padding: 15px;
+}
+.reaction-modal.openModal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+
+.reaction-modal img {
+  width: 48px;
+}
+
+.reaction-modal img:hover {
+  background-color: var(--text-dark);
+  cursor: pointer;
+}
+
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
